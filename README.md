@@ -36,4 +36,9 @@
    - SerialPortTool.csproj — 项目文件  
    - Program.cs — 应用入口，初始化 WinForms  
    - MainForm.Designer.cs — 主界面控件布局  
-   - MainForm.cs — 业务逻辑，包括串口打开/关闭、数据收发处理  
+   - MainForm.cs — 业务逻辑，包括串口打开/关闭、数据收发处理
+
+   ## 截图示例
+
+   <img width="1404" height="1022" alt="image" src="https://github.com/user-attachments/assets/a305925a-c8f6-4d1d-b010-7be3cd88a445" />
+
