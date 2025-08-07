@@ -42,3 +42,46 @@
 
    <img width="1404" height="1022" alt="image" src="https://github.com/user-attachments/assets/a305925a-c8f6-4d1d-b010-7be3cd88a445" />
 
+
+
+# SaleAppDemo 项目说明
+
+## 项目简介
+SaleAppDemo 是一个基于 .NET Framework 4.7.2 的分层架构示例项目，主要用于演示商品销售相关的 Web API 设计与实现。项目采用 C# 7.3 进行开发，包含数据访问、业务逻辑、领域模型和 Web API 层，适合企业级应用的基础架构学习和二次开发。
+
+## 项目结构
+- **Sale.WebAPI**  
+  提供 RESTful API 接口，负责与前端或第三方系统的数据交互。包含全局异常处理、路由配置、控制器等。
+- **Sale.BLL**  
+  业务逻辑层，封装核心业务规则和流程。
+- **Sale.DAL**  
+  数据访问层，负责与数据库的数据交互。
+- **Sale.Domain**  
+  领域模型层，定义实体对象和基础数据结构。
+
+## 主要功能
+- 商品管理（如 ProductsController 控制器）
+- 全局异常处理（ExceptionHandlingFilter 过滤器，支持自定义跳过和详细日志记录）
+- 标准化的 API 错误响应
+- 分层架构，便于扩展和维护
+
+## 关键技术
+- ASP.NET Web API
+- C# 7.3
+- .NET Framework 4.7.2
+- 分层架构（DAL/BLL/Domain/WebAPI）
+
+## 快速开始
+1. 使用 Visual Studio 2022 打开解决方案。
+2. 配置数据库连接字符串（如有需要）。
+3. 编译并运行 Sale.WebAPI 项目。
+4. 通过 Postman 或浏览器访问 API 接口（如 `/api/products`）。
+
+## 异常处理说明
+- 全局异常由 `ExceptionHandlingFilter` 统一捕获并返回标准化 JSON 响应。
+- 支持通过 `SkipExceptionHandlingAttribute` 跳过指定控制器或 Action 的全局异常处理。
+
+## 贡献与反馈
+如需贡献代码或反馈问题，请提交 Pull Request 或 Issue。
+
+---
